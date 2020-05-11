@@ -21,7 +21,7 @@ public class TestService {
     }
 
     @RequestMapping(value = "loginUser", method = RequestMethod.GET,
-            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public String getcall(@RequestParam("test") String test) {
         System.out.println("param value " + test);
         testComponent.testComponentCall();
